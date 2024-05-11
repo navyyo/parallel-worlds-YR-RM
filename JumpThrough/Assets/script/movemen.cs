@@ -21,7 +21,7 @@ public class movemen : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetButtonDown("jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity * jumpMultiplier);
 
@@ -42,8 +42,8 @@ public class movemen : MonoBehaviour
 
 
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        float x = Input.GetAxis("HorizontalP1");
+        float z = Input.GetAxis("VerticalP1");
 
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * speed *Time.deltaTime);

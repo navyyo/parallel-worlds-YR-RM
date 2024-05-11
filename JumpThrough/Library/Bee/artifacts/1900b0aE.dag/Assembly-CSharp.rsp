@@ -357,7 +357,9 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/script/cameracontroll.cs"
 "Assets/script/movemen.cs"
+"Assets/script/movementp2.cs"
 "Assets/script/travelbetween.cs"
+"Assets/script/travelbetween1.cs"
 -langversion:9.0
 
 /deterministic
