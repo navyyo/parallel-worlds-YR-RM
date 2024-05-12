@@ -19,14 +19,24 @@ public class movementp2 : MonoBehaviour
 
     // Start is called before the first frame update
 
-    void Jump()
+    void jump()
     {
-        if (Input.GetButtonDown("Fire3") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity * jumpMultiplier);
 
             jumpMultiplier = 1f;
+            Debug.Log("Juump1");
         }
+
+    
+        /*if (Input.GetKey("space"))
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity * jumpMultiplier);
+
+            jumpMultiplier = 1f;
+            Debug.Log("Juump1");
+        }*/
 
     }
 
@@ -47,7 +57,7 @@ public class movementp2 : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * speed * Time.deltaTime);
-        Jump();
+        jump();
 
 
         velocity.y += gravity * Time.deltaTime;

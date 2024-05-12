@@ -358,7 +358,6 @@
 "Assets/Keypad/Scripts/Keypad.cs"
 "Assets/Keypad/Scripts/KeypadButton.cs"
 "Assets/Keypad/Scripts/KeypadInteractionFPV.cs"
-"Assets/Keypad/Scripts/SlidingDoor.cs"
 "Assets/script/cameracontroll.cs"
 "Assets/script/movemen.cs"
 "Assets/script/movementp2.cs"

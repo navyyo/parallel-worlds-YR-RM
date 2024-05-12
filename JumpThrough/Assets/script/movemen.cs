@@ -19,13 +19,14 @@ public class movemen : MonoBehaviour
 
     // Start is called before the first frame update
 
-    void Jump()
+    void jump()
     {
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity * jumpMultiplier);
 
             jumpMultiplier = 1f;
+            Debug.Log("jumpppppp");
         }
 
     }
@@ -47,7 +48,7 @@ public class movemen : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * speed *Time.deltaTime);
-        Jump();
+        jump();
 
 
         velocity.y += gravity * Time.deltaTime;

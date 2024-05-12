@@ -7,7 +7,7 @@ public class cameracontroll : MonoBehaviour
     public float mouseSensitivity = 100f;
     public Transform playerBody;
     float xRotation = 0f;
-    bool freemouse = false;
+    //bool freemouse = false;
 
 
     private void Start()
@@ -18,7 +18,7 @@ public class cameracontroll : MonoBehaviour
 
     private void Update()
     {
-        if (freemouse ==false)
+        /*if (freemouse ==false)
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
@@ -34,7 +34,7 @@ public class cameracontroll : MonoBehaviour
         else
         {
             freemouse = false;
-        }
+        }*/
 
         float MouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float MouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
